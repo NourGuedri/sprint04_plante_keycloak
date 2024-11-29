@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card shadow mb-4">                   
+      <div class="card-body"> 
+       <table class="table table-striped">
+          <tr> <th>Id</th><th>Nom</th> <th>Couleur</th>  <th>Date Rendez-vous</th> </tr>
+                <tbody *ngFor="let plante of plantes">
+                         <tr >
+                            <td>{{plante.idPlante}}</td>
+                            <td>{{plante.nomPlante}}</td>
+                            <td>{{plante.couleur}}</td>
+                            <td>{{plante.dateRendezVous | date:'dd/MM/yyyy'}}</td>
+                          </tr>                                    
+                 </tbody>
+      </table>
+      </div>
+    </div>
+  </div> 
+  
